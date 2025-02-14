@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   dconf = {
     enable = true;
@@ -10,6 +11,14 @@
       };
       "org/gnome/settings-daemon/plugins/power" = {
         sleep-inactive-ac-type = "nothing";
+      };
+      "org/gnome/shell" = {
+        disable-user-extensions = false;
+        enabled-extensions = with pkgs.gnomeExtensions; [
+          blur-my-shell.extensionUuid
+          dash-to-panel.extensionUuid
+          arcmenu.extensionUuid
+        ];
       };
     };
   };

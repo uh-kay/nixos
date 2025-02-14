@@ -9,6 +9,7 @@
     userSettings = {
       "workbench.colorTheme" = "Catppuccin Mocha";
       "window.titleBarStyle" = "custom";
+      "git.autofetch" = true;
     };
   };
 }

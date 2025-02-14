@@ -14,12 +14,18 @@
       };
       "org/gnome/shell" = {
         disable-user-extensions = false;
-        enabled-extensions = with pkgs.gnomeExtensions; [
-          blur-my-shell.extensionUuid
-          dash-to-panel.extensionUuid
-          arcmenu.extensionUuid
+        enabled-extensions = [
+          "blur-my-shell@aunetx"
+          "dash-to-panel@jderose9.github.com"
+          "arcmenu@arcmenu.com"
         ];
       };
     };
   };
+
+  home.packages = with pkgs.gnomeExtensions; [
+    blur-my-shell
+    dash-to-panel
+    arcmenu
+  ];
 }

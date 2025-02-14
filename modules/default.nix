@@ -8,5 +8,5 @@
     ./nix.nix
     ./ssh.nix
     ./timezone.nix
-  ]
+  ];
 }

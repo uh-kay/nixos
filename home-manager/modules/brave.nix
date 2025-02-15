@@ -8,7 +8,10 @@
       { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
 
       # Bitwarden
-      { id = "nngceckbapebfimnlniiiahkandclblb"; } 
+      { id = "nngceckbapebfimnlniiiahkandclblb"; }
+
+      # Sponsorblock
+      { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } 
     ];
     commandLineArgs = [
       
